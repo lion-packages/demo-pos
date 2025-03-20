@@ -6,34 +6,49 @@ export default function Sidebar({ companyName, show, setShow }) {
   const NavigationItems = () => {
     return (
       <Fragment>
-        <Nav.Link
-          as={Link}
-          to={"/auth/login"}
-          className="border-bottom mb-5"
-          onClick={() => setShow(false)}
-        >
-          Ingresar
-        </Nav.Link>
+        <Fragment>
+          <Nav.Link
+            as={Link}
+            to={"/auth/login"}
+            className="border-bottom"
+            onClick={() => setShow(false)}
+          >
+            Ingresar
+          </Nav.Link>
 
-        <span className="text-muted py-3 bg-light">Administrar</span>
+          <Nav.Link
+            as={Link}
+            to={"/auth/register"}
+            className="border-bottom mb-5"
+            onClick={() => setShow(false)}
+          >
+            Registrarse
+          </Nav.Link>
+        </Fragment>
 
-        <Nav.Link
-          as={Link}
-          to={"/boxes"}
-          className="border-bottom"
-          onClick={() => setShow(false)}
-        >
-          Cajas
-        </Nav.Link>
+        <Fragment>
+          <span className="text-muted py-3 bg-light">
+            <span className="ms-2">Administrar</span>
+          </span>
 
-        <Nav.Link
-          as={Link}
-          to={"/suppliers"}
-          className="border-bottom"
-          onClick={() => setShow(false)}
-        >
-          Proveedores
-        </Nav.Link>
+          <Nav.Link
+            as={Link}
+            to={"/boxes"}
+            className="border-bottom"
+            onClick={() => setShow(false)}
+          >
+            Cajas
+          </Nav.Link>
+
+          <Nav.Link
+            as={Link}
+            to={"/suppliers"}
+            className="border-bottom"
+            onClick={() => setShow(false)}
+          >
+            Proveedores
+          </Nav.Link>
+        </Fragment>
       </Fragment>
     );
   };

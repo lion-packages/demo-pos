@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import CreateSuppliersModal from "./CreateSuppliersModal";
 
-export default function TitleSuppliers() {
+export default function SuppliersTitle() {
   return (
     <Fragment>
       <div className="hstack gap-3">

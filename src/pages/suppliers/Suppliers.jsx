@@ -1,16 +1,16 @@
 import { Fragment } from "react";
-import TableSuppliers from "./components/TableSuppliers";
+import SuppliersTable from "./components/SuppliersTable";
 import { Container } from "react-bootstrap";
-import TitleSuppliers from "./components/TitleSuppliers";
+import SuppliersTitle from "./components/SuppliersTitle";
 
 export default function Suppliers() {
   return (
     <Fragment>
       <Container>
         <div className="my-5">
-          <TitleSuppliers />
+          <SuppliersTitle />
 
-          <TableSuppliers />
+          <SuppliersTable />
         </div>
       </Container>
     </Fragment>

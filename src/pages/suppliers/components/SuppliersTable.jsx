@@ -1,6 +1,6 @@
 import { _, Grid } from "gridjs-react";
 
-export default function TableSuppliers() {
+export default function SuppliersTable() {
   return (
     <Grid
       fixedHeader={true}
@@ -17,22 +17,26 @@ export default function TableSuppliers() {
         },
       }}
       columns={[
+        "#",
         "Nombre",
         "Razón Social",
         "Télefono",
         "Correo",
         "Dirección",
+        "Estado",
         // "Actions",
       ]}
       server={{
         url: "/suppliers.json",
         then: (data) =>
           data.map((card) => [
+            card.id,
             card.name,
             card.nit,
             card.phone,
             card.email,
             card.address,
+            null === card.deleted_at ? "Activo" : "Inactivo",
             // _(
             //   <button
             //     key={card.id}

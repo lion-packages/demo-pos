@@ -13,7 +13,7 @@ export default function CreateSuppliersModal() {
         className="border"
         onClick={() => setShow(true)}
       >
-        <i className="bi bi-person-fill-add fs-4 text-success"></i>
+        <i className="bi bi-person-fill-add fs-5 text-success"></i>
       </Button>
 
       <Modal size="lg" show={show} onHide={() => setShow(false)}>

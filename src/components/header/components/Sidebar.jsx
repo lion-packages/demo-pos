@@ -48,6 +48,15 @@ export default function Sidebar({ companyName, show, setShow }) {
           >
             Proveedores
           </Nav.Link>
+
+          <Nav.Link
+            as={Link}
+            to={"/users"}
+            className="border-bottom"
+            onClick={() => setShow(false)}
+          >
+            Usuarios
+          </Nav.Link>
         </Fragment>
       </Fragment>
     );

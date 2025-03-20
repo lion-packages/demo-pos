@@ -7,6 +7,7 @@ import Suppliers from "./pages/suppliers/Suppliers";
 import Boxes from "./pages/boxes/Boxes";
 import Login from "./pages/auth/login/Login";
 import Register from "./pages/auth/register/Register";
+import Users from "./pages/users/Users";
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
         <Route path="boxes" element={<Boxes />} />
 
         <Route path="suppliers" element={<Suppliers />} />
+
+        <Route path="users" element={<Users />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,24 +1,24 @@
 import { Container } from "react-bootstrap";
-import SuppliersTable from "./components/SuppliersTable";
-import CreateSuppliersModal from "./components/CreateSuppliersModal";
+import UsersTable from "./components/UsersTable";
+import CreateUsersModal from "./components/CreateUsersModal";
 
-export default function Suppliers() {
+export default function Users() {
   return (
-    <Container>
+    <Container fluid>
       <div className="my-5">
         <div className="hstack gap-3">
           <div className="p-2">
-            <h1>Proveedores</h1>
+            <h1>Usuarios</h1>
           </div>
 
           <div className="p-2 ms-auto">
-            <CreateSuppliersModal />
+            <CreateUsersModal />
           </div>
         </div>
 
         <hr />
 
-        <SuppliersTable />
+        <UsersTable />
       </div>
     </Container>
   );

@@ -13,7 +13,7 @@ export default function Header() {
       expand={false}
       className="bg-body-tertiary border-bottom shadow-sm py-3"
     >
-      <Container>
+      <Container fluid>
         <Navbar.Brand as={Link} to={"/"}>
           {companyName}
         </Navbar.Brand>

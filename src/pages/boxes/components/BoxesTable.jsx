@@ -1,6 +1,6 @@
-import { _, Grid } from "gridjs-react";
+import { Grid } from "gridjs-react";
 
-export default function SuppliersTable() {
+export default function BoxesTable() {
   return (
     <Grid
       fixedHeader={true}
@@ -19,27 +19,21 @@ export default function SuppliersTable() {
       columns={[
         "#",
         "Nombre",
-        "Razón Social",
-        "Télefono",
-        "Correo",
-        "Dirección",
+        "Efectivo Disponible",
         "Estado",
         // "Actions",
       ]}
       server={{
-        url: "/suppliers.json",
+        url: "/boxes.json",
         then: (data) =>
-          data.map((supplier) => [
-            supplier.id,
-            supplier.name,
-            supplier.nit,
-            supplier.phone,
-            supplier.email,
-            supplier.address,
-            null === supplier.deleted_at ? "Activo" : "Inactivo",
+          data.map((box) => [
+            box.id,
+            box.name,
+            box.cash_available,
+            null === box.deleted_at ? "Activo" : "Inactivo",
             // _(
             //   <button
-            //     key={supplier.id}
+            //     key={box.id}
             //     className={"py-2 px-4 border rounded-md text-white bg-blue-600"}
             //     onClick={() => console.log("Clicked")}
             //   >

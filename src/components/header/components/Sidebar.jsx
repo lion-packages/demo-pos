@@ -8,6 +8,15 @@ export default function Sidebar({ companyName, show, setShow }) {
       <Fragment>
         <Nav.Link
           as={Link}
+          to={"/boxes"}
+          className="border-bottom"
+          onClick={() => setShow(false)}
+        >
+          Cajas
+        </Nav.Link>
+
+        <Nav.Link
+          as={Link}
           to={"/suppliers"}
           className="border-bottom"
           onClick={() => setShow(false)}

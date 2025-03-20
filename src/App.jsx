@@ -2,13 +2,13 @@ import "./assets/index.css";
 
 import { BrowserRouter, Route, Routes } from "react-router";
 import Header from "./components/header/Header";
+import Footer from "./components/Footer";
 import Dashboard from "./pages/dashboard/Dasboard";
-import Suppliers from "./pages/suppliers/Suppliers";
-import Boxes from "./pages/boxes/Boxes";
 import Login from "./pages/auth/login/Login";
 import Register from "./pages/auth/register/Register";
-import Users from "./pages/users/Users";
-import Footer from "./components/Footer";
+import Boxes from "./pages/administration/boxes/Boxes";
+import Suppliers from "./pages/administration/suppliers/Suppliers";
+import Users from "./pages/administration/users/Users";
 
 function App() {
   return (

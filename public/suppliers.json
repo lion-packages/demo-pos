@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Proveedor 1",
+    "nit": "0123456789",
+    "phone": "+57 310 000 0000",
+    "email": "proveedor1@example.com",
+    "address": "123 Main St, Suba, Bogotá",
+    "deleted_at": null
+  },
+  {
+    "id": 2,
+    "name": "Proveedor 2",
+    "nit": "0123456789",
+    "phone": "+57 310 000 0000",
+    "email": "proveedor2@example.com",
+    "address": "123 Main St, Sucre, Girardot",
+    "deleted_at": null
+  },
+  {
+    "id": 3,
+    "name": "Proveedor 3",
+    "nit": "0123456789",
+    "phone": "+57 310 000 0000",
+    "email": "proveedor3@example.com",
+    "address": "123 Main St, Anytown, Ibagué",
+    "deleted_at": "2025-01-01 08:00:00"
+  }
+]

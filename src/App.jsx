@@ -5,6 +5,7 @@ import Header from "./components/header/Header";
 import Dashboard from "./pages/dashboard/Dasboard";
 import Suppliers from "./pages/suppliers/Suppliers";
 import Boxes from "./pages/boxes/Boxes";
+import Login from "./pages/auth/login/Login";
 
 function App() {
   return (
@@ -13,6 +14,10 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Dashboard />} />
+
+        <Route path="auth">
+          <Route path="login" element={<Login />} />
+        </Route>
 
         <Route path="boxes" element={<Boxes />} />
 

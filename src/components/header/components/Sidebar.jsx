@@ -8,6 +8,17 @@ export default function Sidebar({ companyName, show, setShow }) {
       <Fragment>
         <Nav.Link
           as={Link}
+          to={"/auth/login"}
+          className="border-bottom mb-5"
+          onClick={() => setShow(false)}
+        >
+          Ingresar
+        </Nav.Link>
+
+        <span className="text-muted py-3 bg-light">Administrar</span>
+
+        <Nav.Link
+          as={Link}
           to={"/boxes"}
           className="border-bottom"
           onClick={() => setShow(false)}

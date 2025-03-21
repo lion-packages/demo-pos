@@ -1,9 +1,9 @@
+import BoxMovementsTable from "./components/BoxMovementsTable";
 import { Col, Container, Row } from "react-bootstrap";
-import BoxesTable from "./components/BoxesTable";
-import CreateBoxesForm from "./components/CreateBoxesForm";
-import CreateBoxesModal from "./components/CreateBoxesModal";
+import CreateBoxMovementsModal from "./components/CreateBoxMovementsModal";
+import CreateBoxMovementsForm from "./components/CreateBoxMovementsForm";
 
-export default function Boxes() {
+export default function BoxMovements() {
   return (
     <Container>
       <div className="my-5">
@@ -13,7 +13,7 @@ export default function Boxes() {
           </div>
 
           <div className="p-2 ms-auto d-block d-sm-none">
-            <CreateBoxesModal />
+            <CreateBoxMovementsModal />
           </div>
         </div>
 
@@ -22,17 +22,17 @@ export default function Boxes() {
         <div className="d-none d-sm-block">
           <Row>
             <Col sm={12} md={12} lg={3}>
-              <CreateBoxesForm addSubmitButton={true} />
+              <CreateBoxMovementsForm addButtonSubmit={true} />
             </Col>
 
             <Col sm={12} md={12} lg={9}>
-              <BoxesTable />
+              <BoxMovementsTable />
             </Col>
           </Row>
         </div>
 
         <div className="d-block d-sm-none">
-          <BoxesTable />
+          <BoxMovementsTable />
         </div>
       </div>
     </Container>

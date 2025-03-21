@@ -6,7 +6,7 @@ export default function Sidebar({ companyName, show, setShow }) {
   const NavigationItems = () => {
     return (
       <Fragment>
-        <Fragment>
+        <div className="mb-5">
           <Nav.Link
             as={Link}
             to={"/auth/login"}
@@ -19,21 +19,21 @@ export default function Sidebar({ companyName, show, setShow }) {
           <Nav.Link
             as={Link}
             to={"/auth/register"}
-            className="border-bottom mb-5"
+            className="border-bottom"
             onClick={() => setShow(false)}
           >
             Registrarse
           </Nav.Link>
-        </Fragment>
+        </div>
 
-        <Fragment>
-          <span className="text-muted py-3 bg-light">
-            <span className="ms-2">Administrar</span>
-          </span>
+        <div className="mb-5">
+          <div className="py-3 bg-light w-100">
+            <span className="text-muted ms-2">Administrar</span>
+          </div>
 
           <Nav.Link
             as={Link}
-            to={"/boxes"}
+            to={"/administration/boxes"}
             className="border-bottom"
             onClick={() => setShow(false)}
           >
@@ -42,7 +42,7 @@ export default function Sidebar({ companyName, show, setShow }) {
 
           <Nav.Link
             as={Link}
-            to={"/suppliers"}
+            to={"/administration/suppliers"}
             className="border-bottom"
             onClick={() => setShow(false)}
           >
@@ -51,13 +51,28 @@ export default function Sidebar({ companyName, show, setShow }) {
 
           <Nav.Link
             as={Link}
-            to={"/users"}
+            to={"/administration/users"}
             className="border-bottom"
             onClick={() => setShow(false)}
           >
             Usuarios
           </Nav.Link>
-        </Fragment>
+        </div>
+
+        <div className="mb-5">
+          <div className="py-3 bg-light w-100">
+            <span className="text-muted ms-2">Movimientos de Caja</span>
+          </div>
+
+          <Nav.Link
+            as={Link}
+            to={"/box-movements/box-movements"}
+            className="border-bottom"
+            onClick={() => setShow(false)}
+          >
+            Movimientos de Caja
+          </Nav.Link>
+        </div>
       </Fragment>
     );
   };

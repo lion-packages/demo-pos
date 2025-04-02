@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "box_id": 1,
+    "box_movement_type_id": 1,
+    "previous_balance": 100,
+    "incoming_balance": 20,
+    "current_balance": 120,
+    "create_at": "2023-01-01 08:00:00",
+    "updated_at": "2023-01-01 08:00:00",
+    "deleted_at": null
+  },
+  {
+    "id": 2,
+    "box_id": 1,
+    "box_movement_type_id": 2,
+    "previous_balance": 120,
+    "incoming_balance": 50,
+    "current_balance": 170,
+    "create_at": "2023-01-01 08:00:00",
+    "updated_at": "2023-01-01 08:00:00",
+    "deleted_at": null
+  },
+  {
+    "id": 3,
+    "box_id": 1,
+    "box_movement_type_id": 1,
+    "previous_balance": 170,
+    "incoming_balance": 30,
+    "current_balance": 200,
+    "create_at": "2023-01-01 08:00:00",
+    "updated_at": "2023-01-01 08:00:00",
+    "deleted_at": "2025-01-01 09:00:00"
+  }
+]
